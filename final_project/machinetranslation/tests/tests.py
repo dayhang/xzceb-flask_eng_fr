@@ -1,20 +1,16 @@
 import unittest
 import translator
 
-class TestE2FTranslator(unittest.TestCase):
+class TestEF(unittest.TestCase):
     def runTest(self):
-        self.assertEqual(translator.englishToFrench(
-            None), "", "failed to translate correct")
-        self.assertEqual(translator.englishToFrench('Hello'),
-                         "Bonjour", "failed to translate correct")
+        self.assertEqual(translator.english_to_french(
+            None), "", "False")
+        self.assertEqual(translator.english_to_french('Hello'),
+                         "Bonjour", "False")
 
-
-class TestF2ETranslator(unittest.TestCase):
+class TestFE(unittest.TestCase):
     def runTest(self):
-        self.assertEqual(translator.frenchToEnglish(
-            None), "", "failed to translate correct")
-        self.assertEqual(translator.frenchToEnglish("Bonjour"),
-                         "Hello", "failed to translate correct")
-
+        self.assertEqual(translator.french_to_english(None), "", "False")
+        self.assertEqual(translator.french_to_english("Bonjour"), "Hello", "False")
 
 unittest.main()

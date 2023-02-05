@@ -16,7 +16,6 @@ language_translator = LanguageTranslatorV3(
 )
 language_translator.set_service_url(url)
 
-
 def english_to_french(englishText):
     if englishText is None:
         return ""
@@ -27,9 +26,7 @@ def english_to_french(englishText):
         phrase = translation["translations"][0]["translation"]
     except ApiException as ex:
         phrase = ""
-        print("Method failed with status code " +
-              str(ex.code) + ": " + ex.message)
-
+        print("Method failed with status code " +str(ex.code) + ": " + ex.message)
     return phrase
 
 def french_to_english(frenchText):
@@ -42,7 +39,6 @@ def french_to_english(frenchText):
         phrase = translation["translations"][0]["translation"]
     except ApiException as ex:
         phrase = ""
-        print("Method failed with status code " +
-              str(ex.code) + ": " + ex.message)
+        print("Method failed with status code " + str(ex.code) + ": " + ex.message)
 
     return phrase
