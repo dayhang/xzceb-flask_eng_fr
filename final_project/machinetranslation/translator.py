@@ -16,6 +16,7 @@ language_translator = LanguageTranslatorV3(
 )
 language_translator.set_service_url(url)
 
+
 def englishToFrench(englishText):
     if englishText is None:
         return ""
@@ -28,7 +29,9 @@ def englishToFrench(englishText):
         phrase = ""
         print("Method failed with status code " +
               str(ex.code) + ": " + ex.message)
+
     return phrase
+
 
 def frenchToEnglish(frenchText):
     if frenchText is None:
