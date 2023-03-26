@@ -13,26 +13,26 @@ pip (Python package installer) installed on your local machine
 ## Installation
 Clone this repository using the following command:
 
-'''
+```
 git clone https://github.com/dayhang/xzceb-flask_eng_fr.git
-'''
+```
 
 Navigate to the project directory:
 
-'''
+```
 cd xzceb-flask_eng_fr
 Install the required packages:
-'''
+```
 
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 Start the Flask server by running the following command in your terminal:
 
-'''
+```
 python app.py
-'''
+```
 
 Open a web browser and navigate to http://localhost:5000.
 Enter the English phrase you want to translate in the text box.
