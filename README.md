@@ -21,8 +21,9 @@ Navigate to the project directory:
 
 ```
 cd xzceb-flask_eng_fr
-Install the required packages:
 ```
+
+Install the required packages:
 
 ```
 pip install -r requirements.txt
